@@ -1,6 +1,6 @@
 export default function ProjectPage() {
   return (
-    <div>
+    <div className="page">
       <h1>Project Page</h1>
     </div>
   );
