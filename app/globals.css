@@ -5,6 +5,10 @@
   --color-foreground: #c0caf5;
   --color-primary: #7aa2f7;
   --color-secondary: #f7768e;
+  --color-secondary-background: #292e42;
+  --color-secondary-foreground: #a9b1d6;
+  --color-accent: #9ece6a;
+  --color-muted: #414868;
 }
 
 body {
@@ -26,6 +30,14 @@ body {
 
 @layer base {
   .page {
-    @apply w-full h-screen flex justify-center items-start;
+    @apply w-full h-screen flex justify-center items-start p-10;
+  }
+
+  .logo {
+    @apply text-lg font-bold bg-linear-to-r from-primary via-secondary to-accent bg-clip-text text-transparent;
+  }
+
+  .link {
+    @apply hover:text-accent transition duration-200;
   }
 }
