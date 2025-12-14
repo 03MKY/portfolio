@@ -20,7 +20,7 @@ export default function NavWrapper() {
   return (
     <>
       <Navbar links={LINKS} handleToggle={toggleMenu} />
-      <MobileMenu links={LINKS} menuOpen={isMenuOpen} />
+      <MobileMenu links={LINKS} menuOpen={isMenuOpen} onLinkClick={toggleMenu} />
     </>
   );
 }
