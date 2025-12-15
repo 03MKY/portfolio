@@ -34,7 +34,7 @@ body {
   }
 
   .logo {
-    @apply text-lg font-bold bg-linear-to-r from-primary via-secondary to-accent bg-clip-text text-transparent;
+    @apply text-2xl font-bold bg-linear-to-r from-primary via-secondary to-accent bg-clip-text text-transparent;
   }
 
   .link {
