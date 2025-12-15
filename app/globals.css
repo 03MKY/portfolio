@@ -5,6 +5,7 @@
   --color-foreground: #c0caf5;
   --color-primary: #7aa2f7;
   --color-secondary: #f7768e;
+  --color-highlight: #ff9e64;
   --color-secondary-background: #292e42;
   --color-secondary-foreground: #a9b1d6;
   --color-accent: #9ece6a;
@@ -38,7 +39,7 @@ body {
   }
 
   .link {
-    @apply hover:text-accent transition duration-200;
+    @apply hover:text-primary transition duration-200;
   }
 
   .icons {

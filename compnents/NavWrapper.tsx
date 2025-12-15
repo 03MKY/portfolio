@@ -4,9 +4,9 @@ import MobileMenu from "./MobileMenu";
 import Navbar from "./Navbar";
 
 const LINKS = [
-  { href: "#about", label: "About" },
-  { href: "#experience", label: "Experience" },
+  { href: "#home", label: "Home" },
   { href: "#project", label: "Project" },
+  { href: "#experience", label: "Experience" },
   { href: "#contact", label: "Contact" },
 ];
 
@@ -20,7 +20,11 @@ export default function NavWrapper() {
   return (
     <>
       <Navbar links={LINKS} handleToggle={toggleMenu} />
-      <MobileMenu links={LINKS} menuOpen={isMenuOpen} onLinkClick={toggleMenu} />
+      <MobileMenu
+        links={LINKS}
+        menuOpen={isMenuOpen}
+        onLinkClick={toggleMenu}
+      />
     </>
   );
 }
