@@ -29,16 +29,22 @@ export default function Home() {
           <Image
             src={userData.dpImage}
             alt=""
-            width={200}
-            height={200}
-            className="rounded-full shadow-lg shadow-accent"
+            width={150}
+            height={150}
+            className="rounded-full shadow-lg shadow-accent md:w-50 md:h-50"
           />
+
           {/* Bio Data */}
-          <div className="max-w-175 text-center text-lg font-medium">
-            {userData.bio}
+          <div>
+            <h1 className="text-xl md:text-4xl font-bold text-secondary mb-4">
+               Hi, I&apos;m {userData.name}!
+            </h1>
+            <div className="max-w-175 px-4 md:px-20 text-center text-sm md:text-lg font-medium">
+              {userData.bio}
+            </div>
           </div>
           {/* Resume and LinkedIn */}
-          <div className="flex space-x-6">
+          <div className="flex flex-col sm:flex-row gap-4 sm:gap-6">
             <Button
               label="Get In Touch"
               onClick={() =>
@@ -49,7 +55,7 @@ export default function Home() {
               variant="secondary"
             />
             <Button
-              label="Download Resume"
+              label="Download CV"
               onClick={() => window.open(userData.resumePdf)}
               variant="primary"
             />
@@ -58,16 +64,16 @@ export default function Home() {
           {/* Skills */}
           <div className="flex flex-col flex-wrap gap-4 justify-center text-accent mt-10">
             <h3 className="text-lg font-semibold">EXPERIENCE WITH</h3>
-            <div className="flex flex-wrap gap-6 justify-center mt-4 text-secondary-foreground">
-              <SiPython size={40} />
-              <SiJavascript size={40} />
-              <SiGit size={40} />
-              <SiHtml5 size={40} />
-              <SiCss3 size={40} />
-              <SiMongodb size={40} />
-              <SiPostgresql size={40} />
-              <SiReact size={40} />
-              <SiNextdotjs size={40} />
+            <div className="flex flex-wrap gap-4 md:gap-6 justify-center mt-4 text-secondary-foreground">
+              <SiPython className="icons" />
+              <SiJavascript className="icons" />
+              <SiGit className="icons" />
+              <SiHtml5 className="icons" />
+              <SiCss3 className="icons" />
+              <SiMongodb className="icons" />
+              <SiPostgresql className="icons" />
+              <SiReact className="icons" />
+              <SiNextdotjs className="icons" />
             </div>
           </div>
         </div>

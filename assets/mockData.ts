@@ -10,7 +10,7 @@ export interface PortfolioData {
 
 const userData: PortfolioData = {
   name: "Mohit",
-   bio: "A dedicated Python developer with a strong passion for data science and backend engineering. Expertise in building robust web applications using Django, managing relational data with PostgreSQL, and handling unstructured data with MongoDB. Committed to crafting scalable, efficient solutions that turn data into actionable insights.",
+   bio: "Passionate Python developer specializing in data science and backend development with Django, PostgreSQL, and MongoDB.",
   dpImage: "/anime.jpg",
   resumePdf: "/resume.pdf",
   skills: ["React", "Next.js", "TypeScript"],
