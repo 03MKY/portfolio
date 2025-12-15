@@ -1,5 +1,4 @@
 "use client";
-import AboutPage from "@/compnents/core/about";
 import ContactPage from "@/compnents/core/contact";
 import ExperiencePage from "@/compnents/core/experience";
 import ProjectPage from "@/compnents/core/project";
@@ -37,7 +36,7 @@ export default function Home() {
           {/* Bio Data */}
           <div>
             <h1 className="text-xl md:text-4xl font-bold text-secondary mb-4">
-               Hi, I&apos;m {userData.name}!
+              Hi, I&apos;m {userData.name}!
             </h1>
             <div className="max-w-175 px-4 md:px-20 text-center text-sm md:text-lg font-medium">
               {userData.bio}
@@ -78,9 +77,8 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <AboutPage />
-      <ExperiencePage />
       <ProjectPage />
+      <ExperiencePage />
       <ContactPage />
     </>
   );

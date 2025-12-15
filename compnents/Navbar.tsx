@@ -14,10 +14,10 @@ export default function Navbar({
   handleToggle: () => void;
 }) {
   return (
-    <nav className="flex justify-between items-center px-4 md:px-10 py-1 bg-secondary-background/70 sticky top-0 z-50">
+    <nav className="flex justify-between sm:justify-around items-center px-4 md:px-10 py-1 bg-secondary-background sticky top-0 z-50">
       <h1 className="logo">Mohit 👋</h1>
       {/* Large Screen Navbar */}
-      <ul className="hidden md:flex gap-4 text-md font-medium">
+      <ul className="hidden md:flex gap-10 text-md font-medium">
         {links.map(({ href, label }) => (
           <li key={href}>
             <Link href={href} className="link">
