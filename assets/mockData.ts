@@ -72,6 +72,7 @@ const userData: PortfolioData = {
   ],
   contact: {
     email: "mohitkr76778@gmail.com",
+    linkedin: "https://www.linkedin.com/in/mohit-kumar-ab3416317/",
     github: "https://github.com/03MKY",
   },
 };
